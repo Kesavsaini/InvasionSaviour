@@ -1,0 +1,133 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(221, 105, 105);
+    overflow: hidden;
+    position: relative;
+    background-image: url(https://i.pinimg.com/originals/2d/b8/7a/2db87aace70d1da18100317a2dafc681.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    transition: bottom 0.1s ease, left 0.1s ease;
+    z-index: 100;
+}
+
+.monster{
+    position: absolute;
+    bottom: 24px;
+    right: -400px;
+    transition: bottom 0.2s ease, right 0.1s ease;
+    height: fit-content;
+}
+
+.no-transition{
+    transition: none;
+}
+
+#over{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+#monsterInfo{
+    top: 12px;
+    left: 12px;
+    color: white;
+    font-size: 30px;
+
+    display: flex;
+  align-items: center;
+  position: absolute;
+  background-color: black;
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  border: 5px solid #029c91;
+}
+
+
+
+
+
+/* CSS */
+#replay {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100px;
+  z-index: 1000;
+}
+
+#replay:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+#replay:main,
+#replay:focus {
+  user-select: auto;
+}
+
+#replay:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+#replay:disabled {
+  cursor: auto;
+}
+
+#replay:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+
