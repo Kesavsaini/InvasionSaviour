@@ -25,7 +25,7 @@ const PlayMonsterHurt=()=>{
 }
 
 const PlayMonsterHit=()=>{
-    let monsterHit=new Audio('./resource/monsterHit.mp3');
+    let monsterHit=new Audio('./resource/MonsterHit.mp3');
     monsterHit.play();
 }
 
