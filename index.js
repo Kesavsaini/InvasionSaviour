@@ -175,7 +175,8 @@ const getPowertAttackHit = () => {
             monsterLife--;
             monster.dataset.value=monsterLife;  
             PlayMonsterHit();
-        }if(monsterLife<=0){
+        }if(monsterLife<=0 && !monster.classList.contains("dead")){
+           monster.classList.add("dead");
            monster.querySelector('img').src="./resource/monsterExplode.gif";
            score++;
            PlayMonsterHurt();
