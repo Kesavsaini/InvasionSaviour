@@ -145,9 +145,10 @@ const areInterSecting = (obj1, obj2) => {
   );
 };
 
+
 const moveMonster = (monsterEle) => {
   setTimeout(() => {
-    const speed = 10+score;
+    const speed = 10+(score*2);
     const monsterStyle = window.getComputedStyle(monsterEle);
     if (parseInt(monsterStyle.right) >= width) {
       monsterEle.remove();
